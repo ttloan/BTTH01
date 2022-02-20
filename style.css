@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.sider{
+    with: 800px;
+    height: 500px;
+    border-radious: 10px;
+    overflow: hidden;
+}
+.slide{
+    with: 500%;
+    height: 500px;
+    display:flex;
+}
+.slide input{
+    display: none
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.side img{
+    width: 800px;
+    height: 500px;
+}
+/* css for manual slide navigation*/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 3px solid red ;
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: blueviolet;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20px;
+}
+#radio3:checked ~ .first{
+    margin-left: -40px;
+}
+#radio4:checked ~ .first{
+    margin-left: -60px;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top:460px ;
+}
